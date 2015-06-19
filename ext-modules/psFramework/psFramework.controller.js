@@ -40,13 +40,15 @@
 		
 		$scope.menuButtonClicked = function(){
 			$scope.isMenuVisible = !$scope.isMenuVisible;
+
 			broadcastMenuState();
-			//$scope.$apply();
 		};
 		
 		var broadcastMenuState = function(){
 			$rootScope.$broadcast("ps-menu-show", {
-				show: $scope.isMenuVisible
+				show: $scope.isMenuVisible,
+        isVertical: $scope.isMenuVertical,
+        allowHorizontalToggle: !$scope.isMenuButtonVisible
 			});	
 		};
 		

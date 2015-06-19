@@ -1,5 +1,6 @@
 (function registerMenuModule(angular){
 	"use strict";
+
 	
-	angular.module("psMenu", []);
+	angular.module("psMenu", ["ngAnimate"]);
 }(window.angular));

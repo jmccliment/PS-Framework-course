@@ -3,7 +3,9 @@
 	
 	module.directive("psMenu", directive);
 	
-	function directive(){
+  directive.$inject = ["$timeout"]
+  
+	function directive($timeout){
 		return {
 			scope: {
 				
@@ -12,7 +14,10 @@
 			templateUrl: "ext-modules/psMenu/psMenu.template.html",
 			controller: "psMenuController",
 			link: function(scope, el, attr) {
-				
+        var item = el.find('.ps-selectable-item:first');
+        $timeout(function () {
+          item.trigger('click');
+        });				
 			}
 		};
 	}

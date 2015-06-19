@@ -91,3 +91,12 @@
   width: 200px;
   padding-left: 0;
 }
+.ps-menu-area .ps-fade-in-animation {
+  -moz-transition: linear all 0.25s;
+  -o-transition: linear all 0.25s;
+  -webkit-transition: linear all 0.25s;
+  transition: linear all 0.25s;
+}
+.ps-menu-area .ps-fade-in-animation.ng-hide {
+  opacity: 0;
+}

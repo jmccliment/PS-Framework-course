@@ -26,6 +26,8 @@
 		
 		$scope.$on("ps-menu-show", function(evt, data){
 			$scope.showMenu = data.show;
+      $scope.isVertical = data.isVertical;
+      $scope.allowHorizontalToggle = data.allowHorizontalToggle;
 		});
     
     $scope.toggleMenuOrientation = function(){
@@ -51,7 +53,7 @@
     });
     
     this.setOpenMenuScope = function (scope) {
-      $scope.openMenuScope = scope;;
+      $scope.openMenuScope = scope;
     }
 	}
 }(window.angular, window.angular.module("psMenu")));
