@@ -1,4 +1,4 @@
-(function registerMenuController(angular, module){
+(function registerMenuController($, angular, module){
 	"use strict";
 	
 	controller.$inject = ["$scope", "$rootScope"];
@@ -56,4 +56,4 @@
       $scope.openMenuScope = scope;
     }
 	}
-}(window.angular, window.angular.module("psMenu")));
+}(window.jQuery, window.angular, window.angular.module("psMenu")));

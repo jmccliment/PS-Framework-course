@@ -1,4 +1,4 @@
-(function registerFrameworkController(module){
+(function registerFrameworkController($, module){
 	"use strict";
 	
 	controller.$inject = ["$scope", "$window", "$timeout", "$rootScope"];
@@ -56,4 +56,4 @@
 			checkWidth();
 		}, 0);
 	}
-}(window.angular.module("psFramework")));
+}(window.jQuery, window.angular.module("psFramework")));
