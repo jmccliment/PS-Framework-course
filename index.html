@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Whitewater Adventures</title>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="app/app.css">
+  <link rel="stylesheet" href="ext-modules/psFramework/psFramework.css" />
+  <link rel="stylesheet" href="ext-modules/psMenu/psMenu.css">
+</head>
+<body class="container-fluid">
+  <ps-framework title="Whitewater Adventures"
+                subtitle="Administrative Application"
+                icon-file="images/haiku.png">
+    <ps-menu>
+      <ps-menu-item label="Dashboard" icon="fa-dashboard" route="dashboard"></ps-menu-item>
+      <ps-menu-item label="Locations" icon="fa-location-arrow" route="locations"></ps-menu-item>
+      <ps-menu-item label="Raft Guides" icon="fa-users" route="guides"></ps-menu-item>
+      <ps-menu-group label="Equipment" icon="fa-gears">
+        <ps-menu-item label="Rafts" icon="fa-unlink" route="rafts"></ps-menu-item>
+        <ps-menu-item label="Paddles" icon="fa-magic" route="paddles"></ps-menu-item>
+        <ps-menu-item label="Life Vests" icon="fa-life-ring" route="vests"></ps-menu-item>
+      </ps-menu-group>
+    </ps-menu>
+  
+  </ps-framework>
+  
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/angularjs/angular.min.js"></script>
+  
+  <script src="app/app.module.js"></script>
+  <script src="app/app.config.js"></script>
+  
+  <script src="ext-modules/psFramework/psFramework.module.js"></script>
+  <script src="ext-modules/psFramework/psFramework.directive.js"></script>
+  <script src="ext-modules/psFramework/psFramework.controller.js"></script>
+  
+  <script src="ext-modules/psMenu/psMenu.module.js"></script>
+  <script src="ext-modules/psMenu/psMenu.directive.js"></script>
+  <script src="ext-modules/psMenu/psMenu.controller.js"></script>
+  <script src="ext-modules/psMenu/psMenuItem.directive.js"></script>
+  <script src="ext-modules/psMenu/psMenuGroup.directive.js"></script>
+  <script src="ext-modules/psDashboard/psDashboard.module.js"></script>
+</body>
+</html>
