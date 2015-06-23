@@ -1,11 +1,11 @@
 (function registerFrameworkController($, module){
 	"use strict";
 	
-	controller.$inject = ["$scope", "$window", "$timeout", "$rootScope"];
+	controller.$inject = ["$scope", "$window", "$timeout", "$rootScope", "$location"];
 	
 	module.controller("psFrameworkController", controller);
 	
-	function controller($scope, $window, $timeout, $rootScope){
+	function controller($scope, $window, $timeout, $rootScope, $location){
 		
 		$scope.isMenuVisible = true;
 		$scope.isMenuButtonVisible = true;
@@ -13,6 +13,7 @@
 		
 		$scope.$on("ps-menu-item-selected-event", function(evt, data){
 			$scope.routeString = data.route;
+      $location.path(data.route);
 			checkWidth();
 			broadcastMenuState();
 		});

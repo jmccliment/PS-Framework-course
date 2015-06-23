@@ -5,10 +5,12 @@
   <title>Whitewater Adventures</title>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
   <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="bower_components/angular-gridster/dist/angular-gridster.min.css">
   <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="app/app.css">
   <link rel="stylesheet" href="ext-modules/psFramework/psFramework.css" />
   <link rel="stylesheet" href="ext-modules/psMenu/psMenu.css">
+  <link rel="stylesheet" href="ext-modules/psDashboard/psDashboard.css">
 </head>
 <body class="container-fluid">
   <ps-framework title="Whitewater Adventures"
@@ -30,9 +32,15 @@
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script src="bower_components/angularjs/angular.min.js"></script>
   <script src="bower_components/angular-animate/angular-animate.min.js"></script>
+  <script src="bower_components/angular-route/angular-route.min.js"></script>
+  <script src="bower_components/angular-gridster/dist/angular-gridster.min.js"></script>
   
   <script src="app/app.module.js"></script>
   <script src="app/app.config.js"></script>
+  <script src="app/app.routing.js"></script>
+  <script src="app/directives/wwaDashboard.directive.js"></script>
+  <script src="app/directives/wwaGuides.directive.js"></script>
+  <script src="app/directives/wwaLocations.directive.js"></script>
   
   <script src="ext-modules/psFramework/psFramework.module.js"></script>
   <script src="ext-modules/psFramework/psFramework.directive.js"></script>
@@ -43,6 +51,9 @@
   <script src="ext-modules/psMenu/psMenu.controller.js"></script>
   <script src="ext-modules/psMenu/psMenuItem.directive.js"></script>
   <script src="ext-modules/psMenu/psMenuGroup.directive.js"></script>
+  
   <script src="ext-modules/psDashboard/psDashboard.module.js"></script>
+  <script src="ext-modules/psDashboard/psDashboard.directive.js"></script>
+
 </body>
 </html>

@@ -1,5 +1,5 @@
 (function registerDashboardModule(angular){
 	"use strict";
 	
-	angular.module("psDashboard", []);
+	angular.module("psDashboard", ["gridster"]);
 }(window.angular));
